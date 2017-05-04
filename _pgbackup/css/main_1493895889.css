@@ -165,6 +165,7 @@ a:active
     font-size: 18px;
     padding: 10px 40px;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .btn-home:hover,
@@ -384,8 +385,8 @@ a:active
 
 #hero-area
 {
-    padding: 180px 0;
     background: rgba(0, 0, 0, 0) linear-gradient(135deg, #8ec64e 0%, #41aba0 100%) repeat scroll 0 0;
+    padding: 21vh 0 10vh;
 }
 
 #hero-area:before
@@ -404,7 +405,6 @@ a:active
 
 #hero-area .block
 {
-    padding-top: 100px;
 }
 
 #hero-area .block h1
@@ -442,6 +442,7 @@ a:active
 .logo-2
 {
     display: none!important;
+    max-width: 180px;
 }
 
 .animated .logo-1
@@ -866,12 +867,12 @@ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec6
 #call-to-action
 {
     padding: 70px 0px;
-    background: url(../images/call-to-action.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     border-top: 1px solid #eee;
     color: #fff;
+    background-color: #5fc793;
 }
 
 #call-to-action .block h2
@@ -887,7 +888,7 @@ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec6
 {
     font-size: 15px;
     padding-right: 30px;
-    color: #9F9F9F;
+    color: #fbfbfb;
 }
 
 #call-to-action .block input
@@ -1027,8 +1028,289 @@ footer p a:hover
     color: #fff;
 }
 
-.topMrgin
+.responsive-video
 {
-    margin-top: 30px;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 83%;
+}
+
+/* COMMON PRICING STYLES */
+
+.panel.price,
+		.panel.price>.panel-heading
+{
+    border-radius: 0px;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.panel.price
+{
+    box-shadow: 0px 0px 30px rgba(0,0,0, .2);
+}
+
+.panel.price:hover
+{
+    box-shadow: 0px 0px 30px rgba(0,0,0, .5);
+}
+
+.panel.price:hover>.panel-heading
+{
+    box-shadow: 0px 0px 30px rgba(0,0,0, .2) inset;
+}
+
+.panel.price>.panel-heading
+{
+    box-shadow: 0px 5px 0px rgba(50,50,50, .2) inset;
+    text-shadow: 0px 3px 0px rgba(50,50,50, .6);
+}
+
+.price .list-group-item
+{
+    border-bottom-: 1px solid rgba(250,250,250, .5);
+}
+
+.panel.price .list-group-item:last-child
+{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.panel.price .list-group-item:first-child
+{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.price .panel-footer
+{
+    color: #fff;
+    border-bottom: 0px;
+    background-color: rgba(0,0,0, .1);
+    box-shadow: 0px 3px 0px rgba(0,0,0, .3);
+}
+
+.panel.price .btn
+{
+    box-shadow: 0 -1px 0px rgba(50,50,50, .2) inset;
+    border: 1px;
+    background-color: #bfbfbf;
+    color: #ffffff;
+}
+
+.panel.price .btn:hover
+{
+    box-shadow: 0 -1px 0px rgba(50,50,50, .2) inset;
+    border: 1px;
+    background-color: #000;
+    color: #ffffff;
+}
+
+/* green panel */
+
+.price.panel-green>.panel-heading
+{
+    color: #fff;
+    background-color: #000000;
+    border-color: #71DF71;
+    border-bottom: 1px solid #71DF71;
+}
+
+.price.panel-green>.panel-body
+{
+    color: #fff;
+    background-color: #45ad9b;
+}
+
+.price.panel-green>.panel-body .lead
+{
+    text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+}
+
+.price.panel-green .list-group-item
+{
+    color: #333;
+    background-color: rgba(50,50,50, .01);
+    font-weight: 600;
+    text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+}
+
+/* blue panel */
+
+.price.panel-blue>.panel-heading
+{
+    color: #fff;
+    background-color: #000000;
+    border-color: #78AEE1;
+    border-bottom: 1px solid #78AEE1;
+}
+
+.price.panel-blue>.panel-body
+{
+    color: #fff;
+    background-color: #5db582;
+}
+
+.price.panel-blue>.panel-body .lead
+{
+    text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+}
+
+.price.panel-blue .list-group-item
+{
+    color: #333;
+    background-color: rgba(50,50,50, .01);
+    font-weight: 600;
+    text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+}
+
+/* red price */
+
+.price.panel-red>.panel-heading
+{
+    color: #fff;
+    background-color: #000000;
+    border-color: #FF6062;
+    border-bottom: 1px solid #FF6062;
+}
+
+.price.panel-red>.panel-body
+{
+    color: #fff;
+    background-color: #7abf63;
+}
+
+.price.panel-red>.panel-body .lead
+{
+    text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+}
+
+.price.panel-red .list-group-item
+{
+    color: #333;
+    background-color: rgba(50,50,50, .01);
+    font-weight: 600;
+    text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+}
+
+/* grey price */
+
+.price.panel-grey>.panel-heading
+{
+    color: #fff;
+    background-color: #6D6D6D;
+    border-color: #B7B7B7;
+    border-bottom: 1px solid #B7B7B7;
+}
+
+.price.panel-grey>.panel-body
+{
+    color: #fff;
+    background-color: #808080;
+}
+
+.price.panel-grey>.panel-body .lead
+{
+    text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+}
+
+.price.panel-grey .list-group-item
+{
+    color: #333;
+    background-color: rgba(50,50,50, .01);
+    font-weight: 600;
+    text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+}
+
+/* white price */
+
+.price.panel-white>.panel-heading
+{
+    color: #333;
+    background-color: #f9f9f9;
+    border-color: #ccc;
+    border-bottom: 1px solid #ccc;
+    text-shadow: 0px 2px 0px rgba(250,250,250, .7);
+}
+
+.panel.panel-white.price>.panel-heading
+{
+    box-shadow: 0px 0px 30px rgba(0,0,0, .05) inset;
+}
+
+.price.panel-white>.panel-body
+{
+    color: #fff;
+    background-color: #dfdfdf;
+}
+
+.price.panel-white>.panel-body .lead
+{
+    text-shadow: 0px 2px 0px rgba(250,250,250, .8);
+    color: #666;
+}
+
+.price:hover.panel-white>.panel-body .lead
+{
+    text-shadow: 0px 2px 0px rgba(250,250,250, .9);
+    color: #333;
+}
+
+.price.panel-white .list-group-item
+{
+    color: #333;
+    background-color: rgba(50,50,50, .01);
+    font-weight: 600;
+    text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+}
+
+.Pricingsection
+{
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    text-align: center;
+    display: block;
+}
+
+.paddings
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.inline-block
+{
+    display: inline-block;
+}
+
+.shadow
+{
+    -moz-box-shadow: 10px 1px 30px 2px #ccc;
+    -webkit-box-shadow: 10px 1px 30px 2px #ccc;
+    box-shadow: 10px 1px 30px 2px #ccc;
+}
+
+.logo-1
+{
+    max-width: 180px;
+}
+
+.firstsection
+{
+    padding-top: 65px;
 }
 

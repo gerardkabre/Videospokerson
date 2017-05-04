@@ -442,6 +442,7 @@ a:active
 .logo-2
 {
     display: none!important;
+    max-width: 180px;
 }
 
 .animated .logo-1
@@ -1296,8 +1297,20 @@ footer p a:hover
     display: inline-block;
 }
 
-.shadow {
-  -moz-box-shadow:    10px 1px 30px 2px #ccc;
-  -webkit-box-shadow: 10px 1px 30px 2px #ccc;
-  box-shadow:         10px 1px 30px 2px #ccc;
+.shadow
+{
+    -moz-box-shadow: 10px 1px 30px 2px #ccc;
+    -webkit-box-shadow: 10px 1px 30px 2px #ccc;
+    box-shadow: 10px 1px 30px 2px #ccc;
 }
+
+.logo-1
+{
+    max-width: 180px;
+}
+
+.firstsection
+{
+    padding-top: 65px;
+}
+
